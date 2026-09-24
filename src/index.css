@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Identidad Oficial NextBet (Extraída del Logo) */
+    --color-nextbet-bg: #030914;          /* Fondo muy oscuro / Sidebar */
+    --color-nextbet-card: #0A1428;        /* Paneles oscuros */
+    --color-nextbet-cyan: #00D4FF;        /* Cian neón de conexiones */
+    --color-nextbet-orange: #FF9F1C;      /* Naranja de acento / alertas */
+    --color-nextbet-green: #70E000;       /* Verde lima de balance / estado */
+
+    --font-nextbet: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-nextbet);
+    background-color: #F1F5F9;
+    color: #0F172A;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.bg-nextbet-bg { background-color: var(--color-nextbet-bg); }
+.bg-nextbet-card { background-color: var(--color-nextbet-card); }
+.bg-nextbet-cyan { background-color: var(--color-nextbet-cyan); }
+.text-nextbet-cyan { color: var(--color-nextbet-cyan); }
+.text-nextbet-orange { color: var(--color-nextbet-orange); }
+.text-nextbet-green { color: var(--color-nextbet-green); }
+.border-nextbet-cyan { border-color: var(--color-nextbet-cyan); }
